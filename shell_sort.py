@@ -8,7 +8,6 @@ def shell_sort_arr(arr):
 
     while gap > 0:
         for i in range(arr_len - gap):
-            print(arr[i], '-', arr[i+gap])
             j = i + gap
             while (j - gap >= 0) and (arr[j] < arr[j - gap]):
                 mov_el = arr[j]        # Secure the value of moving element.

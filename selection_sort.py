@@ -14,4 +14,16 @@ def selection_sort_list(arr):
     return arr
 
 
-print(selection_sort_list([1, -45, 45, 22, 12]))
+# print(selection_sort_list([1, -45, 45, 22, 12]))
+
+import random
+import time
+
+for j in range(10):
+    arr = [None] * 32768
+    for i in range(32768):
+        arr[i] = random.randint(1, 200000)
+
+    start_time = time.time()
+    selection_sort_list(arr)
+    print("%s" % (time.time() - start_time))
