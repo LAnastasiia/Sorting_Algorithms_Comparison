@@ -1,2 +1,0 @@
-from insertion_sort import insertion_sort_list
-from selection_sort import selection_sort_list
