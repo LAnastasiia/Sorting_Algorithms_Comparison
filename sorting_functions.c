@@ -3,12 +3,10 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-
 struct LongInt {
     int*   length;
     int*  numbers_arr;
 } comp_count;
-
 
 void addToLongInt(struct LongInt number, int i){
     if (number.numbers_arr[i] < 9) {
